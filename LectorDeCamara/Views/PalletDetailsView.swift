@@ -24,7 +24,7 @@ struct PalletDetailsView: View {
     
     var body: some View {
         List {
-            ForEach( Array(pallet.first!.cajas), id:\.boxId) { caja in
+            ForEach( Array(pallet.first?.cajas ?? []), id:\.boxId) { caja in
                 BoxDescriptionView(caja: caja)
             }
             .onDelete(perform: { indexSet in

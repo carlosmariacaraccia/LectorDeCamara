@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import Introspect
 
 struct PalletBuilderMainView: View {
     
@@ -34,20 +35,18 @@ struct PalletBuilderMainView: View {
                     .padding(.leading, 15)
                 List {
                     ForEach(pallets, id:\.numero) { pallet in
-                        VStack {
-                            NavigationLink(destination: PalletDetailsView(numeroDePallet: pallet.numero).navigationBarTitle("Pallet: \(pallet.numero)")) {
-                                VStack {
-                                    HStack {
-                                        Text("Date: \(pallet.fechaInString!)")
-                                        Spacer()
-                                        Text("id: \(pallet.numero)" as String)
-                                    }
-                                    .padding(.bottom, 10)
-                                    HStack {
-                                        Text("Boxes: \(pallet.cajas.count) u")
-                                        Spacer()
-                                        Text("Wt.: \(pallet.pesoNetoDeCajas) kg" as String)
-                                    }
+                        NavigationLink(destination: PalletDetailsView(numeroDePallet: pallet.numero).navigationBarTitle("Pallet: \(pallet.numero)")) {
+                            VStack {
+                                HStack {
+                                    Text("Date: \(pallet.fechaInString!)")
+                                    Spacer()
+                                    Text("id: \(pallet.numero)" as String)
+                                }
+                                .padding(.bottom, 10)
+                                HStack {
+                                    Text("Boxes: \(pallet.cajas.count) u")
+                                    Spacer()
+                                    Text("Wt.: \(pallet.pesoNetoDeCajas) kg" as String)
                                 }
                             }
                         }
@@ -61,7 +60,6 @@ struct PalletBuilderMainView: View {
                         }
                     })
                 }
-                
             }
             .navigationBarTitle("Pallet Builder")
             .navigationBarItems(trailing: Button(action: { isCreatePalletPresented.toggle() }) {
