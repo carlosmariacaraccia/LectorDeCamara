@@ -54,11 +54,14 @@ struct PalletBuilderMainView: View {
                         .font(.system(size: 14, weight: .light, design: .monospaced))
                     }.onDelete(perform: { indexSet in
                         indexSet.map{pallets[$0]}.forEach { (pallet) in
+                            // we delete the pallet but the boxes are still in the database
+                            // this is because the delete rule in the relationship is nullify
                             viewContext.delete(pallet)
                             try? viewContext.save()
                         }
                     })
                 }
+                
             }
             .navigationBarTitle("Pallet Builder")
             .navigationBarItems(trailing: Button(action: { isCreatePalletPresented.toggle() }) {

@@ -27,6 +27,14 @@ struct PalletDetailsView: View {
             ForEach( Array(pallet.first!.cajas), id:\.boxId) { caja in
                 BoxDescriptionView(caja: caja)
             }
+            .onDelete(perform: { indexSet in
+                indexSet.map {Array(pallet.first!.cajas)[$0]}.forEach { (caja) in
+                    // we only remove the reference, the box is still in the database
+                    // but has no pallet associated
+                    caja.pallet = nil
+                    try? viewContext.save()
+                }
+            })
         }
         .navigationBarItems(trailing: Button(action: {navigationTrailingButton()}, label: {
             Image("icons8-general-ocr-40")

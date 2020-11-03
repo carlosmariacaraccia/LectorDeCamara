@@ -293,7 +293,8 @@ class ViewController: UIViewController {
     /// - Returns: the entity Caja
     private func retrieveNumberFromContext(stringFound:String, context:NSManagedObjectContext) -> Caja? {
         // convert the String to an Int64
-        guard let boxId = Int64(stringFound) else { fatalError("Could not convert number")}
+        
+        guard let boxId = Int64(stringFound) else { fatalError("Could not convert number \(stringFound)")}
         // fire Core data
         let request = NSFetchRequest<Caja>(entityName: "Caja")
         request.predicate = NSPredicate(format: "boxId == %ld AND pallet == nil", boxId)
