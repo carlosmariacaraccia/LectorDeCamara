@@ -46,7 +46,7 @@ struct PalletBuilderMainView: View {
                                     HStack {
                                         Text("Boxes: \(pallet.cajas.count) u")
                                         Spacer()
-                                        Text("Total Net Wt: \(pallet.pesoNetoDeCajas) kg" as String)
+                                        Text("Wt.: \(pallet.pesoNetoDeCajas) kg" as String)
                                     }
                                 }
                             }
