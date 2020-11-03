@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Caja" representedClassName="Caja" syncable="YES" codeGenerationType="class">
+        <attribute name="boxId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="codigoProducto" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="destino" optional="YES" attributeType="String"/>
+        <attribute name="fechaDeProduccion" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="pesoBruto_" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="pesoDelEnvase_" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="pesoNeto_" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="temperatura" optional="YES" attributeType="String"/>
+        <attribute name="uniqueId" optional="YES" attributeType="String"/>
+        <relationship name="pallet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pallet" inverseName="cajas_" inverseEntity="Pallet"/>
+    </entity>
+    <entity name="Pallet" representedClassName="Pallet" syncable="YES" codeGenerationType="class">
+        <attribute name="fecha" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="numero" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uniqueId" optional="YES" attributeType="String"/>
+        <relationship name="cajas_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Caja" inverseName="pallet" inverseEntity="Caja"/>
+    </entity>
+    <elements>
+        <element name="Caja" positionX="-63" positionY="-18" width="128" height="208"/>
+        <element name="Pallet" positionX="-408.37890625" positionY="81.47265625" width="128" height="103"/>
+    </elements>
+</model>

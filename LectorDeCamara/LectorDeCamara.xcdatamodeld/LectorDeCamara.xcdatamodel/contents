@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Caja" representedClassName="Caja" syncable="YES" codeGenerationType="class">
+        <attribute name="boxId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="codigoProducto" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="destino" optional="YES" attributeType="String"/>
+        <attribute name="fechaDeProduccion" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="pesoBruto" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="pesoDelEnvase" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="pesoNeto" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="temperatura" optional="YES" attributeType="String"/>
+        <attribute name="uniqueId" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Caja" positionX="-63" positionY="-18" width="128" height="193"/>
+    </elements>
+</model>
