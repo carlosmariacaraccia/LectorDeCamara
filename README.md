@@ -4,22 +4,22 @@
 
 
 ### After loading the file you can scan this codes
-![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/GitHubReadmeFiles/Image1.png?raw=true)
+![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image1.png?raw=true)
 
-![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/GitHubReadmeFiles/Image2.png?raw=true)
+![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image2.png?raw=true)
 
-![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/GitHubReadmeFiles/Image3.png?raw=true)
+![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image3.png?raw=true)
 
-![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/GitHubReadmeFiles/Image4.png?raw=true)
+![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image4.png?raw=true)
 
-![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/GitHubReadmeFiles/Image5.png?raw=true)
+![alt text](https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image5.png?raw=true)
 
 
 ### You need to load the file in the iPhone
 To load this file you'll need to send it to the files folder o simply by mail.
 Select the share menu and select the app Lector de camara to open the file.
 
-[salida_de_depostada](https://github.com/mostaza1975/LectorDeCamara/blob/PalletMaking/LectorDeCamara/salida_de_depostada.TXT)
+[salida_de_depostada](https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/salida_de_depostada.TXT)
 
 ### Working with the app
 The ide of the app is to add product boxes to a pallet. To achieve this you'll need to store the products in the database, luckily you already did that by when you loaded the file in the database. After youll need to create a new pallet and add the boxes to the pallet by scanning the product codes.
