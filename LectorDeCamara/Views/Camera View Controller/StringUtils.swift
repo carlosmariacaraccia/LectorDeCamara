@@ -59,7 +59,7 @@ extension String {
 		// Do a first pass to find any substring that could be a box id
 
         let newPattern = #"""
-        ^(\w{6})
+        (\w{6})
         """#
 
 		
