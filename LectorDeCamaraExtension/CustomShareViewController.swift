@@ -65,7 +65,6 @@ class CustomShareViewController:UIViewController {
                         self.informationLabel.isHidden = false
 
                         // display the text
-                        
                         self.informationLabel.text = message
                     }
                 }
