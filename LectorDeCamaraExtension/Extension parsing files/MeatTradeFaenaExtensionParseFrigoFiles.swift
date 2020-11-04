@@ -26,9 +26,8 @@ class StoreFrigoFiles {
             let result = Caja.with(stringFromFile: result.stringFromFile!, context: context)
             if result {
                 return """
-                        Se agregaron las
-                        unidades de \n producto
-                        terminado.
+                        Se agregaron las unidades de
+                        producto terminado.
                         """
             } else {
                 return """

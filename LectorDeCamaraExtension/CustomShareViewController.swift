@@ -46,7 +46,7 @@ class CustomShareViewController:UIViewController {
         let context = persistentContainer.viewContext
         
         // MARK: add subview, just one label showing the result of the parsed file, this must be done in code without using the story boards
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.init(red: 165/255, green: 213/255, blue: 228/255, alpha: 1)
         setUpLabel()
         
         
@@ -65,6 +65,7 @@ class CustomShareViewController:UIViewController {
                         self.informationLabel.isHidden = false
 
                         // display the text
+                        
                         self.informationLabel.text = message
                     }
                 }
