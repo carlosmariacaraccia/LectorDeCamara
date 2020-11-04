@@ -9,26 +9,6 @@ import SwiftUI
 import CoreData
 import Introspect
 
-struct PalletBuilderMainViewCell:View {
-    
-    var pallet:Pallet
-    
-    var body: some View {
-        VStack {
-            HStack {
-                Text("Date: \(pallet.fechaInString!)")
-                Spacer()
-                Text("id: \(pallet.numero)" as String)
-            }
-            .padding(.bottom, 10)
-            HStack {
-                Text("Boxes: \(pallet.cajas.count) u")
-                Spacer()
-                Text("Wt.: \(pallet.pesoNetoDeCajas) kg" as String)
-            }
-        }
-    }
-}
 
 struct PalletBuilderMainView: View {
     
@@ -64,7 +44,7 @@ struct PalletBuilderMainView: View {
                 List {
                     ForEach(pallets, id:\.numero) { pallet in
                         NavigationLink(destination: PalletDetailsView(numeroDePallet: pallet.numero).navigationBarTitle("Pallet: \(pallet.numero)")) {
-                            PalletBuilderMainViewCell(pallet: pallet)
+                            PalletBuilderMainPalletItemView(pallet: pallet)
                         }
                         .font(.system(size: 14, weight: .light, design: .monospaced))
                         .onAppear(perform: {

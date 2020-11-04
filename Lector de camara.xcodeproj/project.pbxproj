@@ -18,6 +18,7 @@
 		1F77834B2550445100718956 /* CoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77834A2550445100718956 /* CoreDataExtensions.swift */; };
 		1F77835B2550546300718956 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 1F77835A2550546300718956 /* Introspect */; };
 		1F8AE386254E2E810016CB47 /* LectorDeCamaraExtensionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AE385254E2E810016CB47 /* LectorDeCamaraExtensionError.swift */; };
+		1F8FA4D62552DA4E0020D152 /* PalletBuilderMainPalletItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8FA4D52552DA4E0020D152 /* PalletBuilderMainPalletItemView.swift */; };
 		1FC7AF1A25509B6900D044BE /* salida_de_depostada.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 1FC7AF1925509B6900D044BE /* salida_de_depostada.TXT */; };
 		1FD9C9D9254CB7990036C136 /* LectorDeCamaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9C9D8254CB7990036C136 /* LectorDeCamaraApp.swift */; };
 		1FD9C9DB254CB7990036C136 /* PalletDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9C9DA254CB7990036C136 /* PalletDetailsView.swift */; };
@@ -80,6 +81,7 @@
 		1F7221EB255028EA0042DD8E /* CreateNewPalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPalletView.swift; sourceTree = "<group>"; };
 		1F77834A2550445100718956 /* CoreDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataExtensions.swift; sourceTree = "<group>"; };
 		1F8AE385254E2E810016CB47 /* LectorDeCamaraExtensionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectorDeCamaraExtensionError.swift; sourceTree = "<group>"; };
+		1F8FA4D52552DA4E0020D152 /* PalletBuilderMainPalletItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalletBuilderMainPalletItemView.swift; sourceTree = "<group>"; };
 		1FC7AF1925509B6900D044BE /* salida_de_depostada.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = salida_de_depostada.TXT; sourceTree = "<group>"; };
 		1FD9C9D5254CB7990036C136 /* Lector de camara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lector de camara.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD9C9D8254CB7990036C136 /* LectorDeCamaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectorDeCamaraApp.swift; sourceTree = "<group>"; };
@@ -141,11 +143,20 @@
 			path = GitHubReadmeFiles;
 			sourceTree = "<group>";
 		};
+		1F8FA4D92552DAD00020D152 /* Main pallet view */ = {
+			isa = PBXGroup;
+			children = (
+				1F7221E3255020F90042DD8E /* PalletBuilderMainView.swift */,
+				1F8FA4D52552DA4E0020D152 /* PalletBuilderMainPalletItemView.swift */,
+			);
+			path = "Main pallet view";
+			sourceTree = "<group>";
+		};
 		1FC7AF1F2550CCC500D044BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				1FD9CA09254CCA230036C136 /* Camera View Controller */,
-				1F7221E3255020F90042DD8E /* PalletBuilderMainView.swift */,
+				1F8FA4D92552DAD00020D152 /* Main pallet view */,
 				1FD9C9DA254CB7990036C136 /* PalletDetailsView.swift */,
 				1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */,
 				1F7221EB255028EA0042DD8E /* CreateNewPalletView.swift */,
@@ -369,6 +380,7 @@
 				1FD9C9DB254CB7990036C136 /* PalletDetailsView.swift in Sources */,
 				1FD9C9E5254CB79D0036C136 /* LectorDeCamara.xcdatamodeld in Sources */,
 				1FD9C9D9254CB7990036C136 /* LectorDeCamaraApp.swift in Sources */,
+				1F8FA4D62552DA4E0020D152 /* PalletBuilderMainPalletItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
