@@ -17,6 +17,10 @@ struct PalletBuilderMainView: View {
     
     @FetchRequest var pallets:FetchedResults<Pallet>
     
+    
+    // table view to solve deselecting rows
+    @State private var tableView:UITableView?
+    
     init() {
         let request = NSFetchRequest<Pallet>(entityName: "Pallet")
         request.predicate = NSPredicate(format: "TRUEPREDICATE")
@@ -51,6 +55,9 @@ struct PalletBuilderMainView: View {
                             }
                         }
                         .font(.system(size: 14, weight: .light, design: .monospaced))
+                        .onAppear(perform: {
+                            deselectRows()
+                        })
                     }.onDelete(perform: { indexSet in
                         indexSet.map{pallets[$0]}.forEach { (pallet) in
                             // we delete the pallet but the boxes are still in the database
@@ -59,6 +66,9 @@ struct PalletBuilderMainView: View {
                             try? viewContext.save()
                         }
                     })
+                }
+                .introspectTableView { (tableView) in
+                    self.tableView = tableView
                 }
             }
             .navigationBarTitle("Pallet Builder")
@@ -69,6 +79,12 @@ struct PalletBuilderMainView: View {
             .sheet(isPresented: $isCreatePalletPresented) {
                 CreateNewPalletView(isBeingShown: $isCreatePalletPresented).environment(\.managedObjectContext, viewContext)
             }
+        }
+    }
+    
+    private func deselectRows() {
+        if let tableView = tableView, let selectedRow = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: selectedRow, animated: false)
         }
     }
 }
