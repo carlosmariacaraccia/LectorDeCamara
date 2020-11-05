@@ -27,7 +27,7 @@
 		1FD9C9E2254CB79D0036C136 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9C9E1254CB79D0036C136 /* Persistence.swift */; };
 		1FD9C9E5254CB79D0036C136 /* LectorDeCamara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9C9E3254CB79D0036C136 /* LectorDeCamara.xcdatamodeld */; };
 		1FD9C9FB254CBE220036C136 /* Lector de camaraExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1FD9C9F1254CBE220036C136 /* Lector de camaraExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1FD9CA0F254CCA230036C136 /* CamBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA08254CCA230036C136 /* CamBoxView.swift */; };
+		1FD9CA0F254CCA230036C136 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA08254CCA230036C136 /* CustomCameraView.swift */; };
 		1FD9CA10254CCA230036C136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA0A254CCA230036C136 /* ViewController.swift */; };
 		1FD9CA11254CCA230036C136 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA0B254CCA230036C136 /* PreviewView.swift */; };
 		1FD9CA12254CCA230036C136 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA0C254CCA230036C136 /* VisionViewController.swift */; };
@@ -95,7 +95,7 @@
 		1FD9C9F8254CBE220036C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FD9CA02254CBE310036C136 /* LectorDeCamara.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LectorDeCamara.entitlements; sourceTree = "<group>"; };
 		1FD9CA05254CBE490036C136 /* LectorDeCamaraExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LectorDeCamaraExtension.entitlements; sourceTree = "<group>"; };
-		1FD9CA08254CCA230036C136 /* CamBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamBoxView.swift; sourceTree = "<group>"; };
+		1FD9CA08254CCA230036C136 /* CustomCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		1FD9CA0A254CCA230036C136 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FD9CA0B254CCA230036C136 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		1FD9CA0C254CCA230036C136 /* VisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 				1FD9C9DA254CB7990036C136 /* PalletDetailsView.swift */,
 				1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */,
 				1F7221EB255028EA0042DD8E /* CreateNewPalletView.swift */,
-				1FD9CA08254CCA230036C136 /* CamBoxView.swift */,
+				1FD9CA08254CCA230036C136 /* CustomCameraView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -370,7 +370,7 @@
 				1FD9CA13254CCA230036C136 /* StringUtils.swift in Sources */,
 				1F77834B2550445100718956 /* CoreDataExtensions.swift in Sources */,
 				1FD9CA10254CCA230036C136 /* ViewController.swift in Sources */,
-				1FD9CA0F254CCA230036C136 /* CamBoxView.swift in Sources */,
+				1FD9CA0F254CCA230036C136 /* CustomCameraView.swift in Sources */,
 				1F7221EC255028EA0042DD8E /* CreateNewPalletView.swift in Sources */,
 				1FD9CA11254CCA230036C136 /* PreviewView.swift in Sources */,
 				1F7221E4255020F90042DD8E /* PalletBuilderMainView.swift in Sources */,

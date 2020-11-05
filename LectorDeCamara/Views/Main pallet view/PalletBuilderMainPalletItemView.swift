@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PalletBuilderMainPalletItemView:View {
     
-    var pallet:Pallet
+    @StateObject var pallet:Pallet
     
     var body: some View {
         VStack {

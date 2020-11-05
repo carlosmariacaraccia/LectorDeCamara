@@ -12,19 +12,19 @@ struct PalletDetailsView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     @State var isCameraBeingShown = false
-    
+        
     @FetchRequest var pallet:FetchedResults<Pallet>
-    
-    init(numeroDePallet:Int32) {
-        let fetchRequest = NSFetchRequest<Pallet>(entityName: "Pallet")
-        fetchRequest.predicate = NSPredicate(format: "numero == %ld", numeroDePallet)
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "numero", ascending: false)]
-        _pallet = FetchRequest(fetchRequest: fetchRequest)
+        
+    init(palletId:Int32) {
+        let fetch = NSFetchRequest<Pallet>(entityName: "Pallet")
+        fetch.predicate = NSPredicate(format: "numero == %ld", palletId)
+        fetch.sortDescriptors = [ NSSortDescriptor(key: "numero", ascending: false)]
+        _pallet = FetchRequest(fetchRequest: fetch)
     }
     
     var body: some View {
         List {
-            ForEach( Array(pallet.first?.cajas ?? []), id:\.boxId) { caja in
+            ForEach( Array(pallet.first!.cajas), id:\.boxId) { caja in
                 BoxDescriptionView(caja: caja)
             }
             .onDelete(perform: { indexSet in
@@ -40,7 +40,8 @@ struct PalletDetailsView: View {
             Image("icons8-general-ocr-40")
         }))
         .fullScreenCover(isPresented: $isCameraBeingShown, content: {
-            CamBoxView(pallet:pallet.first!)
+            CustomCameraView(pallet: pallet.first!)
+                .edgesIgnoringSafeArea(.all)
         })
     }
     
@@ -52,6 +53,6 @@ struct PalletDetailsView: View {
 struct ContentView_Previews: PreviewProvider {
     
     static var previews: some View {
-        return PalletDetailsView(numeroDePallet: Int32(33))
+        return PalletDetailsView(palletId: Int32(17))
     }
 }

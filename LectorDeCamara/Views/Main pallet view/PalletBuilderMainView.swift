@@ -13,11 +13,8 @@ import Introspect
 struct PalletBuilderMainView: View {
     
     @Environment(\.managedObjectContext) var viewContext:NSManagedObjectContext
-    
     @State private var isCreatePalletPresented = false
-    
     @FetchRequest var pallets:FetchedResults<Pallet>
-    
     
     // table view to solve deselecting rows
     @State private var tableView:UITableView?
@@ -43,7 +40,7 @@ struct PalletBuilderMainView: View {
                     .padding(.leading, 15)
                 List {
                     ForEach(pallets, id:\.numero) { pallet in
-                        NavigationLink(destination: PalletDetailsView(numeroDePallet: pallet.numero).navigationBarTitle("Pallet: \(pallet.numero)")) {
+                        NavigationLink(destination: PalletDetailsView(palletId: pallet.numero).navigationBarTitle("Pallet: \(pallet.numero)")) {
                             PalletBuilderMainPalletItemView(pallet: pallet)
                         }
                         .font(.system(size: 14, weight: .light, design: .monospaced))
