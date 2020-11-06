@@ -18,7 +18,7 @@ struct PalletDetailsView: View {
     init(palletId:Int32) {
         let fetch = NSFetchRequest<Pallet>(entityName: "Pallet")
         fetch.predicate = NSPredicate(format: "numero == %ld", palletId)
-        fetch.sortDescriptors = [ NSSortDescriptor(key: "numero", ascending: false)]
+        fetch.sortDescriptors = [ NSSortDescriptor(key: "fecha", ascending: false)]
         _pallet = FetchRequest(fetchRequest: fetch)
     }
     

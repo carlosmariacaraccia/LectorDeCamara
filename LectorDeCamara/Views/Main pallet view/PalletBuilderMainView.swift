@@ -41,8 +41,19 @@ struct PalletBuilderMainView: View {
                 List {
                     ForEach(pallets, id:\.numero) { pallet in
                         NavigationLink(destination: PalletDetailsView(palletId: pallet.numero).navigationBarTitle("Pallet: \(pallet.numero)")) {
-                            PalletBuilderMainPalletItemView(pallet: pallet)
-                        }
+                            VStack {
+                                HStack {
+                                    Text("Date: \(pallet.fechaInString!)")
+                                    Spacer()
+                                    Text("id: \(pallet.numero)" as String)
+                                }
+                                .padding(.bottom, 10)
+                                HStack {
+                                    Text("Boxes: \(pallet.cajas.count) u")
+                                    Spacer()
+                                    Text("Wt.: \(pallet.pesoNetoDeCajas) kg" as String)
+                                }
+                            }                        }
                         .font(.system(size: 14, weight: .light, design: .monospaced))
                         .onAppear(perform: {
                             // hack to solve unselection of cells
