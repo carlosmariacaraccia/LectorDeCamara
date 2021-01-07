@@ -42,6 +42,18 @@ If you have any questions, mail to carloscaraccia@gmail.com
 
 # Screen shots
 
+<div class="row">
+  <div class="column">
+    <p align=center>
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM426.png?raw=true" width=180 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image2.png?raw=true" width=180 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image3.png?raw=true" width=180 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image4.png?raw=true" width=180 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image5.png?raw=true" width=180 />
+    </p>
+  </div>
+</div>
+
 
 
 
