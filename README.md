@@ -52,7 +52,6 @@ If you have any questions, mail to carloscaraccia@gmail.com
       <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM430.PNG?raw=true" width=200 />
       <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM431.PNG?raw=true" width=200 />
       <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM432.PNG?raw=true" width=200 />
-      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM434.PNG?raw=true" width=200 />
       <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM435.PNG?raw=true" width=200 />
       <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM436.PNG?raw=true" width=200 />
       <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM437.PNG?raw=true" width=200 />
