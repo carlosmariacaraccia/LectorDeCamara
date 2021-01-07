@@ -62,5 +62,11 @@ If you have any questions, mail to carloscaraccia@gmail.com
 </div>
 
 
+# Code
 
+## Input file through extension
+The first step here would be to upload the file to your iOS device. To fulfill this process I decided to create an app extension.
+In here we have to do the following things, first open the file and get its string content, second parse the file and extract the
+info we require, and third persist the data (I chose core data as a persistent framework).
+We have to be careful because we need to 
 
