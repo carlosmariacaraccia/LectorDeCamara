@@ -45,11 +45,20 @@ If you have any questions, mail to carloscaraccia@gmail.com
 <div class="row">
   <div class="column">
     <p align=center>
-      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM426.png?raw=true" width=180 />
-      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image2.png?raw=true" width=180 />
-      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image3.png?raw=true" width=180 />
-      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image4.png?raw=true" width=180 />
-      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/Image5.png?raw=true" width=180 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM426.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM427.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM428.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM429.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM430.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM431.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM432.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM434.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM435.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM436.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM437.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM438.jpg?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM439.PNG?raw=true" width=200 />
+      <img src="https://github.com/mostaza1975/LectorDeCamara/blob/master/LectorDeCamara/GitHubReadmeFiles/IM440.PNG?raw=true" width=200 />
     </p>
   </div>
 </div>
