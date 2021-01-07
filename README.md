@@ -40,4 +40,8 @@ The ide of the app is to add product boxes to a pallet. To achieve this you'll n
 
 If you have any questions, mail to carloscaraccia@gmail.com
 
+# Screen shots
+
+
+
 
