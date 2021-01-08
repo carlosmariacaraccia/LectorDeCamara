@@ -64,6 +64,4 @@ If you have any questions, mail to carloscaraccia@gmail.com
 
 # Code
 
-## Please note that this is part of a project I have developed for Meat Trade, so I won't be able to show you all the code (I don't consider it ethical)
-## Take into account that I want to show my knowlede of the different frameworks, so I have mixed SwiftUI, UIKit, UIKit with storyboards and without storyboards.
-## The idea behind this is not only showing my knowledge of the different apple frameworks but that I know how to integrate them.
+## Please note that this is part of a project I have developed for Meat Trade, so I won't be able to show you all the code (I don't consider it ethical). Take into account that I want to show my knowledge of the different frameworks and how to integrate them, so I have mixed SwiftUI, UIKit with and without storyboards.
