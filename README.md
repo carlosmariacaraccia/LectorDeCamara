@@ -64,9 +64,6 @@ If you have any questions, mail to carloscaraccia@gmail.com
 
 # Code
 
-## Input file through extension
-The first step here would be to upload the file to your iOS device. To fulfill this process I decided to create an app extension.
-In here we have to do the following things, first open the file and get its string content, second parse the file and extract the
-info we require, and third persist the data (I chose core data as a persistent framework).
-We have to be careful because we need to 
-
+## Please note that this is part of a project I have developed for Meat Trade, so I won't be able to show you all the code (I don't consider it ethical)
+## Take into account that I want to show my knowlede of the different frameworks, so I have mixed SwiftUI, UIKit, UIKit with storyboards and without storyboards.
+## The idea behind this is not only showing my knowledge of the different apple frameworks but that I know how to integrate them.
