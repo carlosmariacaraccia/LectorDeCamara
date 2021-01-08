@@ -65,3 +65,5 @@ If you have any questions, mail to carloscaraccia@gmail.com
 # Code
 
 ## Please note that this is small part of a bigger project I have developed for Meat Trade. Take into account that I want to show my knowledge of the different frameworks and how to integrate them, so I have mixed SwiftUI, UIKit with and without storyboards. The read deal would be to split each framework by its self, but I don't currently have the time for it.
+
+### For recruiters, the project consists on a app that loads a file and stores it in core data, this is done by creating an app extension and an app group to access both databases. After data is loaded I create a table view where I can add new items. Once the item is added we use the camera to capture the code from the labels and if they match with the codes previously stored we add it to a pallet.
