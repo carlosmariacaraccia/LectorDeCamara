@@ -61,7 +61,6 @@ extension String {
         let newPattern = #"""
         (\w{6})
         """#
-
 		
 		guard let range = self.range(of: newPattern, options: .regularExpression, range: nil, locale: nil) else {
 			// No box id found.

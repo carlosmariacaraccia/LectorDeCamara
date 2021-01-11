@@ -53,14 +53,17 @@ class CustomShareViewController:UIViewController {
         // MARK:-  when we load the view, we will parse the file from the NSExtensionContext if it contains certain strings
         let content = extensionContext?.inputItems[0] as? NSExtensionItem
         guard let attachment = content?.attachments?.first else { fatalError("Problem loading the attachment") }
+        
         // check if the attachment conforms to the public.plain-text
         if attachment.hasItemConformingToTypeIdentifier("public.plain-text") {
             attachment.loadItem(forTypeIdentifier: "public.plain-text", options: nil) { data, error in
                 guard let fileUrl = data as? URL else { fatalError("Could not get data url") }
+                
                 // Send the operantion to the background in case it takes too long, extensions cannot run long long tasks
                 DispatchQueue.global(qos: .userInitiated).async {
                     let message = StoreFrigoFiles.with(fileUrl: fileUrl, fileData: nil, context: context)
                     DispatchQueue.main.async {
+                        
                         // go to the main queue and diplay the label
                         self.informationLabel.isHidden = false
 
