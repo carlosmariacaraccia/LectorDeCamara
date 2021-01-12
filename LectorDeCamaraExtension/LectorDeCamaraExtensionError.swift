@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+// this file will be deleted
 protocol OurErrorProtocol: LocalizedError {
 
     var title: String? { get }
