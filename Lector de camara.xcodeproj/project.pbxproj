@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0D347A25AE2AD000095A1E /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D347625AE2A7400095A1E /* ValidationService.swift */; };
+		1F0D348325AE2C6B00095A1E /* ExtensionUIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D347F25AE2C2A00095A1E /* ExtensionUIViewController+UIAlert.swift */; };
+		1F0D348F25AE37A300095A1E /* Lector_de_camara_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D348E25AE37A300095A1E /* Lector_de_camara_Tests.swift */; };
+		1F0D349A25AE37F400095A1E /* ValidationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D349925AE37F400095A1E /* ValidationServiceTests.swift */; };
 		1F3B9CC92551689D0044CDD3 /* BoxDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */; };
 		1F3B9CD2255174E60044CDD3 /* Image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B9CCD255174E50044CDD3 /* Image3.png */; };
 		1F3B9CD3255174E60044CDD3 /* Image4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B9CCE255174E50044CDD3 /* Image4.png */; };
@@ -58,6 +62,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F0D349125AE37A300095A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FD9C9CD254CB7990036C136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FD9C9D4254CB7990036C136;
+			remoteInfo = "Lector de camara";
+		};
 		1FD9C9F9254CBE220036C136 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FD9C9CD254CB7990036C136 /* Project object */;
@@ -82,6 +93,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F0D347625AE2A7400095A1E /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		1F0D347F25AE2C2A00095A1E /* ExtensionUIViewController+UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionUIViewController+UIAlert.swift"; sourceTree = "<group>"; };
+		1F0D348C25AE37A300095A1E /* Lector de camara Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lector de camara Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0D348E25AE37A300095A1E /* Lector_de_camara_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lector_de_camara_Tests.swift; sourceTree = "<group>"; };
+		1F0D349025AE37A300095A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0D349925AE37F400095A1E /* ValidationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceTests.swift; sourceTree = "<group>"; };
 		1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxDescriptionView.swift; sourceTree = "<group>"; };
 		1F3B9CCD255174E50044CDD3 /* Image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image3.png; sourceTree = "<group>"; };
 		1F3B9CCE255174E50044CDD3 /* Image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image4.png; sourceTree = "<group>"; };
@@ -138,6 +155,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F0D348925AE37A300095A1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FD9C9D2254CB7990036C136 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +180,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0D348D25AE37A300095A1E /* Lector de camara Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F0D348E25AE37A300095A1E /* Lector_de_camara_Tests.swift */,
+				1F0D349925AE37F400095A1E /* ValidationServiceTests.swift */,
+				1F0D349025AE37A300095A1E /* Info.plist */,
+			);
+			path = "Lector de camara Tests";
+			sourceTree = "<group>";
+		};
 		1F3B9CCC255174B40044CDD3 /* GitHubReadmeFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +252,7 @@
 				1F3B9CDF255183340044CDD3 /* README.md */,
 				1FD9C9D7254CB7990036C136 /* LectorDeCamara */,
 				1FD9C9F2254CBE220036C136 /* LectorDeCamaraExtension */,
+				1F0D348D25AE37A300095A1E /* Lector de camara Tests */,
 				1FD9C9D6254CB7990036C136 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -227,6 +262,7 @@
 			children = (
 				1FD9C9D5254CB7990036C136 /* Lector de camara.app */,
 				1FD9C9F1254CBE220036C136 /* Lector de camaraExtension.appex */,
+				1F0D348C25AE37A300095A1E /* Lector de camara Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +300,8 @@
 				1FD9CA17254CD8A20036C136 /* CustomPersistenetContainer.swift */,
 				1FD9CA18254CD8A20036C136 /* CustomShareViewController.swift */,
 				1F8AE385254E2E810016CB47 /* LectorDeCamaraExtensionError.swift */,
+				1F0D347625AE2A7400095A1E /* ValidationService.swift */,
+				1F0D347F25AE2C2A00095A1E /* ExtensionUIViewController+UIAlert.swift */,
 				1FD9CA35254CDFB40036C136 /* LectorDeCamaraCoreDataCajaExtension.swift */,
 				1FD9CA2A254CDF180036C136 /* Extension parsing files */,
 				1FD9C9F8254CBE220036C136 /* Info.plist */,
@@ -297,6 +335,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1F0D348B25AE37A300095A1E /* Lector de camara Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0D349325AE37A300095A1E /* Build configuration list for PBXNativeTarget "Lector de camara Tests" */;
+			buildPhases = (
+				1F0D348825AE37A300095A1E /* Sources */,
+				1F0D348925AE37A300095A1E /* Frameworks */,
+				1F0D348A25AE37A300095A1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F0D349225AE37A300095A1E /* PBXTargetDependency */,
+			);
+			name = "Lector de camara Tests";
+			productName = "Lector de camara Tests";
+			productReference = 1F0D348C25AE37A300095A1E /* Lector de camara Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1FD9C9D4254CB7990036C136 /* Lector de camara */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FD9C9E9254CB79D0036C136 /* Build configuration list for PBXNativeTarget "Lector de camara" */;
@@ -342,9 +398,13 @@
 		1FD9C9CD254CB7990036C136 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					1F0D348B25AE37A300095A1E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 1FD9C9D4254CB7990036C136;
+					};
 					1FD9C9D4254CB7990036C136 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -371,11 +431,19 @@
 			targets = (
 				1FD9C9D4254CB7990036C136 /* Lector de camara */,
 				1FD9C9F0254CBE220036C136 /* Lector de camaraExtension */,
+				1F0D348B25AE37A300095A1E /* Lector de camara Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F0D348A25AE37A300095A1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FD9C9D3254CB7990036C136 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +484,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F0D348825AE37A300095A1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0D349A25AE37F400095A1E /* ValidationServiceTests.swift in Sources */,
+				1F0D348F25AE37A300095A1E /* Lector_de_camara_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FD9C9D1254CB7990036C136 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,8 +522,10 @@
 				1FD9CA31254CDF180036C136 /* MeatTradeFaenaExtensionParseInputFiles.swift in Sources */,
 				1FD9CA1B254CD8A20036C136 /* CustomPersistenetContainer.swift in Sources */,
 				1FD9CA1E254CD8A20036C136 /* CustomNavigationController.swift in Sources */,
+				1F0D348325AE2C6B00095A1E /* ExtensionUIViewController+UIAlert.swift in Sources */,
 				1FD9CA32254CDF180036C136 /* MeatTradeFaenaExtensionDecideTypeOfFile.swift in Sources */,
 				1FD9CA25254CD9BB0036C136 /* LectorDeCamara.xcdatamodeld in Sources */,
+				1F0D347A25AE2AD000095A1E /* ValidationService.swift in Sources */,
 				1FD9CA2F254CDF180036C136 /* MeatTradeFaenaExtensionParseFrigoFiles.swift in Sources */,
 				1FD9CA1C254CD8A20036C136 /* CustomShareViewController.swift in Sources */,
 				1F8AE386254E2E810016CB47 /* LectorDeCamaraExtensionError.swift in Sources */,
@@ -456,6 +535,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F0D349225AE37A300095A1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FD9C9D4254CB7990036C136 /* Lector de camara */;
+			targetProxy = 1F0D349125AE37A300095A1E /* PBXContainerItemProxy */;
+		};
 		1FD9C9FA254CBE220036C136 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1FD9C9F0254CBE220036C136 /* Lector de camaraExtension */;
@@ -464,6 +548,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1F0D349425AE37A300095A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2JM5RQ28LQ;
+				INFOPLIST_FILE = "Lector de camara Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carloscaraccia.Lector-de-camara-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lector de camara.app/Lector de camara";
+			};
+			name = Debug;
+		};
+		1F0D349525AE37A300095A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2JM5RQ28LQ;
+				INFOPLIST_FILE = "Lector de camara Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carloscaraccia.Lector-de-camara-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lector de camara.app/Lector de camara";
+			};
+			name = Release;
+		};
 		1FD9C9E7254CB79D0036C136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -671,6 +797,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F0D349325AE37A300095A1E /* Build configuration list for PBXNativeTarget "Lector de camara Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0D349425AE37A300095A1E /* Debug */,
+				1F0D349525AE37A300095A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1FD9C9D0254CB7990036C136 /* Build configuration list for PBXProject "Lector de camara" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

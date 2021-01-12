@@ -10,21 +10,25 @@ import CoreData
 
 extension Caja {
     
-    static func with(stringFromFile: String, context:NSManagedObjectContext) -> Bool {
-        
+    
+    typealias SalidaDepostada = (dictBoxIdDetails:[String:[String?]]?, uniqueIds:[String], idProduccion:String)
+
+    static func with(salidaDepostada: SalidaDepostada, context:NSManagedObjectContext) -> Bool {
+        // type alias to hide the return type
+
         // first parse the file into dictionarys
-        guard let result = ParseInputFile.parseProduccionFile(from: stringFromFile) else { fatalError("wrong file") }
+        //guard let result = ParseInputFile.parseProduccionFile(from: stringFromFile) else { fatalError("wrong file") }
         
         // check if the box is in the database
         let request = NSFetchRequest<Caja>(entityName: "Caja")
-        request.predicate = NSPredicate(format: "uniqueId IN %@", result.uniqueIds)
+        request.predicate = NSPredicate(format: "uniqueId IN %@", salidaDepostada.uniqueIds)
         request.sortDescriptors = [NSSortDescriptor(key: "fechaDeProduccion", ascending: false)]
         
         // fetch the box
         guard let fetchResult = try? context.fetch(request) else { fatalError("Error when fetching Caja in the database") }
         
         // use set to enter the non entered objects, using substraction
-        let substractionSet = Set(result.uniqueIds).subtracting(fetchResult.map{ $0.uniqueId })
+        let substractionSet = Set(salidaDepostada.uniqueIds).subtracting(fetchResult.map{ $0.uniqueId })
         
         // date formatter object we will use to enter the Caja object in the database
         let formatter = DateFormatter()
@@ -33,7 +37,7 @@ extension Caja {
         // store the remaining items in the database
         if substractionSet.count != 0 {
             
-            let boxIdToDetails = result.dictBoxIdDetails
+            let boxIdToDetails = salidaDepostada.dictBoxIdDetails
             substractionSet.forEach { (uniqueId) in
                 
                 // create a new Caja object and fill its properties
@@ -46,7 +50,7 @@ extension Caja {
                 caja.pesoNeto_ = (Decimal(string: boxIdToDetails![uniqueId!]![4]!)! as NSDecimalNumber)
                 caja.codigoProducto = Int32(boxIdToDetails![uniqueId!]![6]!)!
                 caja.descripcion = boxIdToDetails![uniqueId!]![7]!
-                caja.fechaDeProduccion = formatter.date(from: result.idProduccion.components(separatedBy: "-").first!)
+                caja.fechaDeProduccion = formatter.date(from: salidaDepostada.idProduccion.components(separatedBy: "-").first!)
                                 
                 try? context.save()
 

@@ -29,9 +29,24 @@ class CustomShareViewController:UIViewController {
     // context
     private var activateDoneButton = false
     
+    // added the dependancy
+    private let inputFileValidator:FileValidationService
+    
+    init(validation:FileValidationService) {
+        self.inputFileValidator = validation
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.inputFileValidator = FileValidationService()
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    
     // Label used to show the result of the parse
     let informationLabel = UILabel()
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // sep up the navigation bar
@@ -59,16 +74,40 @@ class CustomShareViewController:UIViewController {
             attachment.loadItem(forTypeIdentifier: "public.plain-text", options: nil) { data, error in
                 guard let fileUrl = data as? URL else { fatalError("Could not get data url") }
                 
+                var errorMessage:String?
+                var result:Bool?
+                var parseSalida:Caja.SalidaDepostada?
+                
                 // Send the operantion to the background in case it takes too long, extensions cannot run long long tasks
                 DispatchQueue.global(qos: .userInitiated).async {
-                    let message = StoreFrigoFiles.with(fileUrl: fileUrl, fileData: nil, context: context)
+                    //let message = StoreFrigoFiles.with(fileUrl: fileUrl, fileData: nil, context: context)
+                    do {
+                        parseSalida = try self.inputFileValidator.validateInputFile(urlFile: fileUrl)
+                    } catch let err {
+                        //self.present(err)
+                        errorMessage = err.localizedDescription
+                    }
+                    //let message = StoreFrigoFiles.with(fileUrl: fileUrl, fileData: nil, context: context)
+                    
                     DispatchQueue.main.async {
                         
+                        if let error = errorMessage {
+                            self.presentAlert(with: error)
+                        } else {
+                            // if there is no Error parsing try to add the boxes to the database (the might be there)
+                            result = Caja.with(salidaDepostada: parseSalida!, context: context)
+                            if result! {
+                                self.presentAlert(with: "\(parseSalida!.uniqueIds.count) cajas were added to the database")
+                            } else {
+                                self.presentAlert(with: "The boxes where already stored in the database")
+                            }
+                        }                        
+                        
                         // go to the main queue and diplay the label
-                        self.informationLabel.isHidden = false
-
+                        //self.informationLabel.isHidden = false
+                        
                         // display the text
-                        self.informationLabel.text = message
+                        //self.informationLabel.text = message
                     }
                 }
             }
@@ -100,24 +139,24 @@ class CustomShareViewController:UIViewController {
         
         // give a small title to our inputing file
         self.navigationItem.title = "Input File"
-
+        
         // creating the cancel uibarbutton item
         let itemCancel = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelAction))
         self.navigationItem.setLeftBarButton(itemCancel, animated: false)
         itemCancel.isEnabled = activateDoneButton
-
+        
         // create and configure the done uibarbuttonitem
         let itemDone = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneAction))
         self.navigationItem.setRightBarButton(itemDone, animated: true)
     }
     
-
+    
     /// function to cancel the input file view controller and halt and error
     @objc private func cancelAction () {
         let error = NSError(domain: "some.bundle.identifier", code: 0, userInfo: [NSLocalizedDescriptionKey: "An error description"])
         extensionContext?.cancelRequest(withError: error)
     }
-
+    
     
     /// function to dismiss the Input file view controller
     @objc private func doneAction() {

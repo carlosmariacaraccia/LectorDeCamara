@@ -16,7 +16,7 @@ class CustomShareNavigationController: UINavigationController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
-        self.setViewControllers([CustomShareViewController()], animated: false)
+        self.setViewControllers([CustomShareViewController(validation: FileValidationService())], animated: false)
         self.navigationBar.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
     }
 
