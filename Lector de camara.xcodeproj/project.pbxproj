@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F0D347A25AE2AD000095A1E /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D347625AE2A7400095A1E /* ValidationService.swift */; };
 		1F0D348325AE2C6B00095A1E /* ExtensionUIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D347F25AE2C2A00095A1E /* ExtensionUIViewController+UIAlert.swift */; };
-		1F0D348F25AE37A300095A1E /* Lector_de_camara_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D348E25AE37A300095A1E /* Lector_de_camara_Tests.swift */; };
-		1F0D349A25AE37F400095A1E /* ValidationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D349925AE37F400095A1E /* ValidationServiceTests.swift */; };
+		1F0D349F25AF42BD00095A1E /* Salida de depostada.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D349E25AF42BD00095A1E /* Salida de depostada.TXT */; };
+		1F0D34AA25AF450500095A1E /* ValidationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */; };
 		1F3B9CC92551689D0044CDD3 /* BoxDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */; };
 		1F3B9CD2255174E60044CDD3 /* Image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B9CCD255174E50044CDD3 /* Image3.png */; };
 		1F3B9CD3255174E60044CDD3 /* Image4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B9CCE255174E50044CDD3 /* Image4.png */; };
@@ -96,9 +96,9 @@
 		1F0D347625AE2A7400095A1E /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		1F0D347F25AE2C2A00095A1E /* ExtensionUIViewController+UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionUIViewController+UIAlert.swift"; sourceTree = "<group>"; };
 		1F0D348C25AE37A300095A1E /* Lector de camara Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lector de camara Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F0D348E25AE37A300095A1E /* Lector_de_camara_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lector_de_camara_Tests.swift; sourceTree = "<group>"; };
 		1F0D349025AE37A300095A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F0D349925AE37F400095A1E /* ValidationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationServiceTests.swift; sourceTree = "<group>"; };
+		1F0D349E25AF42BD00095A1E /* Salida de depostada.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Salida de depostada.TXT"; sourceTree = "<group>"; };
+		1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationServiceTests.swift; sourceTree = "<group>"; };
 		1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxDescriptionView.swift; sourceTree = "<group>"; };
 		1F3B9CCD255174E50044CDD3 /* Image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image3.png; sourceTree = "<group>"; };
 		1F3B9CCE255174E50044CDD3 /* Image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image4.png; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		1F0D348D25AE37A300095A1E /* Lector de camara Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1F0D348E25AE37A300095A1E /* Lector_de_camara_Tests.swift */,
-				1F0D349925AE37F400095A1E /* ValidationServiceTests.swift */,
+				1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */,
+				1F0D349E25AF42BD00095A1E /* Salida de depostada.TXT */,
 				1F0D349025AE37A300095A1E /* Info.plist */,
 			);
 			path = "Lector de camara Tests";
@@ -441,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0D349F25AF42BD00095A1E /* Salida de depostada.TXT in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,8 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F0D349A25AE37F400095A1E /* ValidationServiceTests.swift in Sources */,
-				1F0D348F25AE37A300095A1E /* Lector_de_camara_Tests.swift in Sources */,
+				1F0D34AA25AF450500095A1E /* ValidationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
