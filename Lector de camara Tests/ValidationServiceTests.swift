@@ -27,9 +27,25 @@ class ValidationServiceTests: XCTestCase {
     
     func test_if_the_file_is_valid() throws {
         // must throw no error
-        let fileURL = Bundle.main.url(forResource: "Salida de depostada", withExtension: "TXT")!
+        let fileURL = Bundle(for: ValidationServiceTests.self).url(forResource: "Salida de depostada", withExtension: "TXT")!
         
         XCTAssertNoThrow(try fileValidationService.validateInputFile(urlFile: fileURL))
     }
+    
+    func test_if_the_file_is_not_valid() throws {
+        // must throw no error
+        let fileURL = Bundle(for: ValidationServiceTests.self).url(forResource: "061656 copy", withExtension: "TXT")!
+        
+        XCTAssertThrowsError(try fileValidationService.validateInputFile(urlFile: fileURL))
+    }
+    
+    func test_similar_file_is_not_valid() throws {
+        // must throw no error
+        let fileURL = Bundle(for: ValidationServiceTests.self).url(forResource: "142526 2", withExtension: "txt")!
+        
+        XCTAssertThrowsError(try fileValidationService.validateInputFile(urlFile: fileURL))
+    }
+
+
     
 }

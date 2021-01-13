@@ -10,7 +10,22 @@
 		1F0D347A25AE2AD000095A1E /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D347625AE2A7400095A1E /* ValidationService.swift */; };
 		1F0D348325AE2C6B00095A1E /* ExtensionUIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D347F25AE2C2A00095A1E /* ExtensionUIViewController+UIAlert.swift */; };
 		1F0D349F25AF42BD00095A1E /* Salida de depostada.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D349E25AF42BD00095A1E /* Salida de depostada.TXT */; };
-		1F0D34AA25AF450500095A1E /* ValidationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */; };
+		1F0D352A25AF835500095A1E /* Salida de depostada.TXT in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D349E25AF42BD00095A1E /* Salida de depostada.TXT */; };
+		1F0D353125AF839E00095A1E /* ValidationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */; };
+		1F0D353525AF83AB00095A1E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA1A254CD8A20036C136 /* CustomNavigationController.swift */; };
+		1F0D353625AF83AB00095A1E /* CustomPersistenetContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA17254CD8A20036C136 /* CustomPersistenetContainer.swift */; };
+		1F0D353725AF83AB00095A1E /* CustomShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA18254CD8A20036C136 /* CustomShareViewController.swift */; };
+		1F0D353825AF83AB00095A1E /* LectorDeCamaraExtensionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AE385254E2E810016CB47 /* LectorDeCamaraExtensionError.swift */; };
+		1F0D353925AF83AB00095A1E /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D347625AE2A7400095A1E /* ValidationService.swift */; };
+		1F0D353A25AF83AB00095A1E /* ExtensionUIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D347F25AE2C2A00095A1E /* ExtensionUIViewController+UIAlert.swift */; };
+		1F0D353C25AF83AB00095A1E /* MeatTradeFaenaExtensionParseFrigoFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA2B254CDF180036C136 /* MeatTradeFaenaExtensionParseFrigoFiles.swift */; };
+		1F0D353D25AF83AB00095A1E /* MeatTradeFaenaExtensionParseInputFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA2C254CDF180036C136 /* MeatTradeFaenaExtensionParseInputFile.swift */; };
+		1F0D353E25AF83AB00095A1E /* MeatTradeFaenaExtensionParseInputFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA2D254CDF180036C136 /* MeatTradeFaenaExtensionParseInputFiles.swift */; };
+		1F0D353F25AF83AB00095A1E /* MeatTradeFaenaExtensionDecideTypeOfFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA2E254CDF180036C136 /* MeatTradeFaenaExtensionDecideTypeOfFile.swift */; };
+		1F0D354625AF842F00095A1E /* LectorDeCamara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9C9E3254CB79D0036C136 /* LectorDeCamara.xcdatamodeld */; };
+		1F0D354A25AF845D00095A1E /* LectorDeCamaraCoreDataCajaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA35254CDFB40036C136 /* LectorDeCamaraCoreDataCajaExtension.swift */; };
+		1F0D354F25AF85F300095A1E /* 061656 copy.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D354E25AF85F300095A1E /* 061656 copy.TXT */; };
+		1F0D355725AF893E00095A1E /* 142526 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D355625AF893E00095A1E /* 142526 2.txt */; };
 		1F3B9CC92551689D0044CDD3 /* BoxDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */; };
 		1F3B9CD2255174E60044CDD3 /* Image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B9CCD255174E50044CDD3 /* Image3.png */; };
 		1F3B9CD3255174E60044CDD3 /* Image4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B9CCE255174E50044CDD3 /* Image4.png */; };
@@ -99,6 +114,8 @@
 		1F0D349025AE37A300095A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F0D349E25AF42BD00095A1E /* Salida de depostada.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Salida de depostada.TXT"; sourceTree = "<group>"; };
 		1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationServiceTests.swift; sourceTree = "<group>"; };
+		1F0D354E25AF85F300095A1E /* 061656 copy.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "061656 copy.TXT"; sourceTree = "<group>"; };
+		1F0D355625AF893E00095A1E /* 142526 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "142526 2.txt"; sourceTree = "<group>"; };
 		1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxDescriptionView.swift; sourceTree = "<group>"; };
 		1F3B9CCD255174E50044CDD3 /* Image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image3.png; sourceTree = "<group>"; };
 		1F3B9CCE255174E50044CDD3 /* Image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image4.png; sourceTree = "<group>"; };
@@ -183,6 +200,8 @@
 		1F0D348D25AE37A300095A1E /* Lector de camara Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1F0D355625AF893E00095A1E /* 142526 2.txt */,
+				1F0D354E25AF85F300095A1E /* 061656 copy.TXT */,
 				1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */,
 				1F0D349E25AF42BD00095A1E /* Salida de depostada.TXT */,
 				1F0D349025AE37A300095A1E /* Info.plist */,
@@ -441,6 +460,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0D354F25AF85F300095A1E /* 061656 copy.TXT in Resources */,
+				1F0D355725AF893E00095A1E /* 142526 2.txt in Resources */,
 				1F0D349F25AF42BD00095A1E /* Salida de depostada.TXT in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +510,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F0D34AA25AF450500095A1E /* ValidationServiceTests.swift in Sources */,
+				1F0D354A25AF845D00095A1E /* LectorDeCamaraCoreDataCajaExtension.swift in Sources */,
+				1F0D354625AF842F00095A1E /* LectorDeCamara.xcdatamodeld in Sources */,
+				1F0D353525AF83AB00095A1E /* CustomNavigationController.swift in Sources */,
+				1F0D353625AF83AB00095A1E /* CustomPersistenetContainer.swift in Sources */,
+				1F0D353725AF83AB00095A1E /* CustomShareViewController.swift in Sources */,
+				1F0D353825AF83AB00095A1E /* LectorDeCamaraExtensionError.swift in Sources */,
+				1F0D353925AF83AB00095A1E /* ValidationService.swift in Sources */,
+				1F0D353A25AF83AB00095A1E /* ExtensionUIViewController+UIAlert.swift in Sources */,
+				1F0D353C25AF83AB00095A1E /* MeatTradeFaenaExtensionParseFrigoFiles.swift in Sources */,
+				1F0D353D25AF83AB00095A1E /* MeatTradeFaenaExtensionParseInputFile.swift in Sources */,
+				1F0D353E25AF83AB00095A1E /* MeatTradeFaenaExtensionParseInputFiles.swift in Sources */,
+				1F0D353F25AF83AB00095A1E /* MeatTradeFaenaExtensionDecideTypeOfFile.swift in Sources */,
+				1F0D353125AF839E00095A1E /* ValidationServiceTests.swift in Sources */,
+				1F0D352A25AF835500095A1E /* Salida de depostada.TXT in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +585,7 @@
 		1F0D349425AE37A300095A1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JM5RQ28LQ;
 				INFOPLIST_FILE = "Lector de camara Tests/Info.plist";
@@ -565,14 +599,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lector de camara.app/Lector de camara";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
 		1F0D349525AE37A300095A1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JM5RQ28LQ;
 				INFOPLIST_FILE = "Lector de camara Tests/Info.plist";
@@ -586,7 +619,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lector de camara.app/Lector de camara";
 			};
 			name = Release;
 		};

@@ -61,7 +61,7 @@ struct FileValidationService {
         }
         
         // Check if the parsing results are valid
-        guard let safeparsedFileResults = ParseInputFile.parseProduccionFile(from: inputString) else { throw FileValidationError.corruptedFile }
+        guard let safeparsedFileResults = try ParseInputFile.parseProduccionFile(from: inputString) else { throw FileValidationError.corruptedFile }
         
         // first we will check the totals
         guard safeparsedFileResults.uniqueIds.count == totals.numberOfBoxes else { throw FileValidationError.invalidFile }
@@ -98,9 +98,9 @@ struct FileValidationService {
         // First split the string in lines
         let fileLines = file.components(separatedBy: "\r\n").filter {!$0.contains("-------")}
         // get the line where the total weights are
-        let totalWeightLine = fileLines.filter{$0.contains("Total Gral")}[0]
+        guard let totalWeightLine = fileLines.filter({$0.contains("Total Gral")}).first else { throw FileValidationError.invalidFile }
         // get the line where the total amount of boxes are
-        let totalBoxesLine = fileLines.filter{$0.contains("Tot, Cajas")}[0]
+        guard let totalBoxesLine = fileLines.filter({$0.contains("Tot, Cajas")}).first else { throw FileValidationError.invalidFile }
         
         // create a scanner to get the weight
         let weightScanner = Scanner(string: totalWeightLine)
