@@ -37,7 +37,7 @@ struct FileValidationService {
     
     let maxFileSize:UInt64 = 1000000
     
-    typealias SalidaDepostada = (dictBoxIdDetails:[String:[String?]]?, uniqueIds:[String], idProduccion:String)
+    typealias SalidaDepostada = (dictBoxIdDetails:[String:[String]], uniqueIds:[String], idProduccion:String)
 
     
     func validateInputFile(urlFile: URL?) throws -> SalidaDepostada {
@@ -60,8 +60,14 @@ struct FileValidationService {
             throw totalsError
         }
         
+        var safeparsedFileResults = (dictBoxIdDetails:[String:[String]](), uniqueIds:[String](), idProduccion:String())
+        
         // Check if the parsing results are valid
-        guard let safeparsedFileResults = try ParseInputFile.parseProduccionFile(from: inputString) else { throw FileValidationError.corruptedFile }
+        do {
+            safeparsedFileResults = try ParseInputFile.parseProduccionFile(from: inputString)
+        } catch let parsingError {
+            throw parsingError
+        }
         
         // first we will check the totals
         guard safeparsedFileResults.uniqueIds.count == totals.numberOfBoxes else { throw FileValidationError.invalidFile }
@@ -135,13 +141,13 @@ struct FileValidationService {
         var grossTotalWt:Decimal = 0.0
         var netTotalWt:Decimal = 0.0
         
-        guard let safeDictBoxIdDetails = parsedFileResult.dictBoxIdDetails else { throw FileValidationError.invalidFile }
+        let safeDictBoxIdDetails = parsedFileResult.dictBoxIdDetails
         
         try parsedFileResult.uniqueIds.forEach({ (id) in
             
             guard let boxProperties = safeDictBoxIdDetails[id] else { throw FileValidationError.invalidFile }
-            guard let boxGrossWtString = boxProperties[2] else { throw FileValidationError.invalidFile }
-            guard let boxNetWtString = boxProperties[4] else { throw FileValidationError.invalidFile }
+            let boxGrossWtString = boxProperties[2]
+            let boxNetWtString = boxProperties[4]
             guard let grossBoxWtDecimal = Decimal(string: boxGrossWtString) else { throw FileValidationError.invalidFile }
             guard let boxNetWtDecimal = Decimal(string: boxNetWtString) else { throw FileValidationError.invalidFile }
             
