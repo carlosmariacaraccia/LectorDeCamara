@@ -10,9 +10,6 @@ import Foundation
 enum FileValidationError:LocalizedError {
     
     case invalidFile
-    case corruptedFile
-    case notFromUser
-    case tooBigFile
     case cannotOpenFile
     
     var errorDescription:String? {
@@ -20,14 +17,9 @@ enum FileValidationError:LocalizedError {
         switch self {
         case .invalidFile:
             return "The file you are attempting to enter is invalid or unreadable"
-        case .corruptedFile:
-            return "The file you are attempting to enter is corrupted"
-        case .notFromUser:
-            return "The file you are attempting to enter does not belongs to this user"
-        case .tooBigFile:
-            return "This file might not belong to us becasuse its too big"
+
         case .cannotOpenFile:
-            return "The url where the file is stored seems to be invalid"
+            return "The url where the file is stored seems to be invalid or the file is bigger than expected."
         }
     }
 }
@@ -38,8 +30,11 @@ struct FileValidationService {
     let maxFileSize:UInt64 = 1000000
     
     typealias SalidaDepostada = (dictBoxIdDetails:[String:[String]], uniqueIds:[String], idProduccion:String)
-
     
+    /// Function to validate an input file
+    /// - Parameter urlFile: the url where the file is stored
+    /// - Throws: an File validator error which can mean that the file is corrupted, that it is invalid or that it cannot be opened
+    /// - Returns: a Salida de depostada tuple consisting of a dictionary, and array of strings, and a production id
     func validateInputFile(urlFile: URL?) throws -> SalidaDepostada {
         
         guard let inputString = checkIfFileCanBeOpened(of: urlFile) else { throw FileValidationError.cannotOpenFile }
@@ -47,7 +42,7 @@ struct FileValidationService {
         guard let totals = getTotals(from: inputString) else { throw FileValidationError.invalidFile }
         
         // Try to parse the file
-        guard let safeparsedFileResults = ParseInputFile.parseProduccionFile(from: inputString) else { throw FileValidationError.corruptedFile }
+        guard let safeparsedFileResults = ParseInputFile.parseProduccionFile(from: inputString) else { throw FileValidationError.invalidFile }
         
         // first we will check the totals
         guard safeparsedFileResults.uniqueIds.count == totals.numberOfBoxes else { throw FileValidationError.invalidFile }
@@ -149,10 +144,13 @@ struct FileValidationService {
         let totalBoxesScanner = Scanner(string: totalBoxes)
         let _ = totalBoxesScanner.scanUpToString("Cajas")
         let _ = totalBoxesScanner.scanUpToString(" ")
+        
         guard let numberOfBoxes = totalBoxesScanner.scanInt() else { return nil }
+        
         if numberOfBoxes == numberOfBoxesFromFile {
             return true
         }
+        
         return false
     }
     

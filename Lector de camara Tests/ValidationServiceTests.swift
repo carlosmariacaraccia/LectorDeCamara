@@ -53,7 +53,33 @@ class ValidationServiceTests: XCTestCase {
 
     }
 
+    func test_if_error_message_is_invalid_file() throws {
+        let expectedError = FileValidationError.invalidFile
+        var error:FileValidationError?
+        
+        let fileURL = Bundle(for: ValidationServiceTests.self).url(forResource: "Romaneo de faena 1", withExtension: "TXT")!
+
+        XCTAssertThrowsError(try fileValidationService.validateInputFile(urlFile: fileURL)) { thrownError in
+                error = thrownError as? FileValidationError
+        }
+        
+        XCTAssertEqual(error, expectedError)
+    }
     
+    func test_if_error_message_is_cannot_open_file() throws {
+        
+        let expectedError = FileValidationError.cannotOpenFile
+        var error:FileValidationError?
+        
+        let fileURL = Bundle(for: ValidationServiceTests.self).url(forResource: "salida de depostada grande", withExtension: "txt")!
+
+        XCTAssertThrowsError(try fileValidationService.validateInputFile(urlFile: fileURL)) { thrownError in
+                error = thrownError as? FileValidationError
+        }
+        
+        XCTAssertEqual(error, expectedError)
+
+    }
 
     
 }
