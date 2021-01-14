@@ -26,6 +26,7 @@
 		1F0D354A25AF845D00095A1E /* LectorDeCamaraCoreDataCajaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9CA35254CDFB40036C136 /* LectorDeCamaraCoreDataCajaExtension.swift */; };
 		1F0D354F25AF85F300095A1E /* 061656 copy.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D354E25AF85F300095A1E /* 061656 copy.TXT */; };
 		1F0D355725AF893E00095A1E /* 142526 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D355625AF893E00095A1E /* 142526 2.txt */; };
+		1F0D355F25AFC12300095A1E /* Romaneo de faena 1.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D355E25AFC12300095A1E /* Romaneo de faena 1.TXT */; };
 		1F3B9CC92551689D0044CDD3 /* BoxDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */; };
 		1F3B9CD2255174E60044CDD3 /* Image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B9CCD255174E50044CDD3 /* Image3.png */; };
 		1F3B9CD3255174E60044CDD3 /* Image4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B9CCE255174E50044CDD3 /* Image4.png */; };
@@ -116,6 +117,7 @@
 		1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationServiceTests.swift; sourceTree = "<group>"; };
 		1F0D354E25AF85F300095A1E /* 061656 copy.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "061656 copy.TXT"; sourceTree = "<group>"; };
 		1F0D355625AF893E00095A1E /* 142526 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "142526 2.txt"; sourceTree = "<group>"; };
+		1F0D355E25AFC12300095A1E /* Romaneo de faena 1.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Romaneo de faena 1.TXT"; sourceTree = "<group>"; };
 		1F3B9CC82551689D0044CDD3 /* BoxDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxDescriptionView.swift; sourceTree = "<group>"; };
 		1F3B9CCD255174E50044CDD3 /* Image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image3.png; sourceTree = "<group>"; };
 		1F3B9CCE255174E50044CDD3 /* Image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image4.png; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		1F0D348D25AE37A300095A1E /* Lector de camara Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1F0D355E25AFC12300095A1E /* Romaneo de faena 1.TXT */,
 				1F0D355625AF893E00095A1E /* 142526 2.txt */,
 				1F0D354E25AF85F300095A1E /* 061656 copy.TXT */,
 				1F0D34A925AF450500095A1E /* ValidationServiceTests.swift */,
@@ -462,6 +465,7 @@
 			files = (
 				1F0D354F25AF85F300095A1E /* 061656 copy.TXT in Resources */,
 				1F0D355725AF893E00095A1E /* 142526 2.txt in Resources */,
+				1F0D355F25AFC12300095A1E /* Romaneo de faena 1.TXT in Resources */,
 				1F0D349F25AF42BD00095A1E /* Salida de depostada.TXT in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

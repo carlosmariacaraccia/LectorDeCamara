@@ -45,7 +45,15 @@ class ValidationServiceTests: XCTestCase {
         
         XCTAssertThrowsError(try fileValidationService.validateInputFile(urlFile: fileURL))
     }
+    
+    func test_different_file_is_not_valid() throws {
+        
+        let fileURL = Bundle(for: ValidationServiceTests.self).url(forResource: "Romaneo de faena 1", withExtension: "TXT")!
+        XCTAssertThrowsError(try fileValidationService.validateInputFile(urlFile: fileURL))
 
+    }
+
+    
 
     
 }
